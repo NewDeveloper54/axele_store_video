@@ -112,10 +112,33 @@ img{
     .label{
       width: 1000%;
       display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
+      flex-direction: column-reverse;
+      justify-content: center;
       align-items: center;
   }
    
+
      
+  #navBar{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    height: 500px;
   }
+  }
+
+
+  @media (max-width:300px) {
+    .links{
+      width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  }
+
+
+  
+  }
+
+

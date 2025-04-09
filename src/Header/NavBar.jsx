@@ -2,27 +2,32 @@ import React from "react";
 import "./NavBar.css";
 import foxy from "../assets/foxy.svg";
 
+import { useTheme } from "../ThemeContext";
+
 export const Links = () => {
+  
+  const { isDarkMode, toggleTheme } = useTheme();
+
   return (
     <div id="navBar">
-      <div class="links">
+      <div className="links">
 <a href="#sectionTwo">
-        <div class="link item">Démarches</div>
+        <div className="link item">Démarches</div>
         </a>
 
         <a href="#sectionTwo">
-        <div class="link item">Recherche</div>
+        <div className="link item">Recherche</div>
         </a>
         <a href="#sectionTwo">
-        <div class="link item">Infos</div>
+        <div className="link item">Infos</div>
         </a>
       </div>
 
-      <div class="label">
-        <label class="toggle-switch">
-          <input type="checkbox" />
-          <div class="toggle-switch-background">
-            <div class="toggle-switch-handle"></div>
+      <div className="label">
+        <label className="toggle-switch">
+          <input type="checkbox" checked={isDarkMode} onChange={toggleTheme}/>
+          <div className="toggle-switch-background">
+            <div className="toggle-switch-handle"></div>
           </div>
         </label>
         <img src={foxy} height="70" width="70" alt="nothing yet" />

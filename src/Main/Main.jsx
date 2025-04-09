@@ -1,6 +1,8 @@
 import React from "react";
 import "./Main.css";
 
+import { useTheme } from "../ThemeContext";
+
 import rendezVousImg from "../assets/rendez-vous.png";
 import contactImg from "../assets/courriel-de-contact.png";
 import foxy from "../assets/foxy.svg";
@@ -11,11 +13,16 @@ import partenaire from "../assets/accord.png";
 import gerer from "../assets/gerer.png";
 
 const Main = () => {
-  return (
-    <div id="main">
 
-      <section id="sectionOne" class="sectionOne">
-        <div class="title">
+
+  const { isDarkMode } = useTheme();
+
+
+  return (
+    <div className={isDarkMode ? "mBlack" : "m"} id="main">
+
+      <section id="sectionOne" className="sectionOne">
+        <div className="title">
         
         <a href="https://www.moncontroletechnique.fr/" className="text-xl font-bold flex items-center">
 
@@ -34,26 +41,30 @@ const Main = () => {
     height="50"
     className="foxy"
   />
-  <p class="foxyPara">Sécurité et Environnement</p>
+  <p className="foxyPara">Sécurité et Environnement</p>
   </div>
 
 </a>
 
 
+
         </div>
-        <div class="searchBar">
+        <div className="searchBar">
           <input type="text" placeholder="type here" />
-          <button class="btn">Recherche</button>
+          <button className="btn">
+            <span className="text">Recherche</span> 
+            <img className="loop" src={rechercheImg} alt="nothing yet"  height="30" width="30" />
+            </button>
         </div>
       </section>
 
-      <section id="sectionTwo" class="sectionTwo">
+      <section id="sectionTwo" className="sectionTwo">
         <h1>Toutes vos démarches en un clic :</h1>
-        <div class="cards">
+        <div className="cards">
         <a href="https://www.moncontroletechnique.fr/" target="_blank">
-          <div class="items one">
+          <div className="items one">
          
-            <div class="littleCard">
+            <div className="littleCard">
               <img src={rendezVousImg} height="80" width="80" alt="nothing yet" />
               <h2>RENDEZ-VOUS</h2>
             </div>
@@ -63,8 +74,8 @@ const Main = () => {
 
 
           <a href="https://www.moncontroletechnique.fr/" target="_blank">
-          <div class="items two">
-            <div class="littleCard">
+          <div className="items two">
+            <div className="littleCard">
               <img src={rechercheImg}  alt="nothing yet" />
               <h2>RECHERCHE</h2>
             </div>
@@ -73,8 +84,8 @@ const Main = () => {
         </a>
 
         <a href="https://www.moncontroletechnique.fr/#block-informationssurlecontroletechnique " target="_blank">
-          <div class="items three">
-            <div class="littleCard">
+          <div className="items three">
+            <div className="littleCard">
               <img src={info} height="70" width="70" alt="nothing yet" />
               <h2>INFOS</h2>
             </div>
@@ -84,8 +95,8 @@ const Main = () => {
 
 
         <a href="https://www.moncontroletechnique.fr/annulation_rdv" target="_blank">
-          <div class="items four">
-            <div class="littleCard">
+          <div className="items four">
+            <div className="littleCard">
               <img src={gerer} height="80" width="80" alt="nothing yet" />
               <h2>GERER MES RENDEZ-VOUS</h2>
             </div>
@@ -94,8 +105,8 @@ const Main = () => {
         </a>
 
         <a href="https://www.moncontroletechnique.fr/contactez-nous" target="_blank">
-          <div class="items five">
-            <div class="littleCard">
+          <div className="items five">
+            <div className="littleCard">
               <img src={contactImg} height="80" width="80" alt="nothing yet" />
               <h2>CONTACT</h2>
             </div>
@@ -104,8 +115,8 @@ const Main = () => {
         </a>
 
         <a href="https://www.protechnologies.fr/devenir-controleur-technique" target="_blank">
-          <div class="items six">
-            <div class="littleCard">
+          <div className="items six">
+            <div className="littleCard">
               <img src={partenaire} height="80" width="80" alt="nothing yet" />
               <h2>DEVENIR PARTENAIRE</h2>
             </div>

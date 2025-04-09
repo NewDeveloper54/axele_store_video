@@ -39,6 +39,9 @@ input{
     font-weight: bold;
     cursor: pointer;
     transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover{
     transform: scale(1.05);
@@ -99,8 +102,11 @@ input{
                          "four five six";
     grid-gap: 100px;
 }
-#main{
+.m{
     background-color: #F2F2F2;
+}
+.mBlack{
+    background-color: rgb(18, 16, 16);
 }
 .one{
     grid-area: one;
@@ -204,5 +210,64 @@ a:hover {
     display: flex;
     justify-content: flex-end;
     color: #702B2B;
+}
+
+.loop{
+    display: none;
+}
+.text{
+    display: inline;
+}
+
+@media (max-width: 1000px) {
+    .cards{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-template-rows: repeat(3, 300px);
+        grid-template-areas: "one two"
+                             "three four"
+                             "five six";
+        grid-gap: 100px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 650px) {
+    .cards{
+        margin-top: 100px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-template-rows: repeat(6, 300px);
+        grid-template-areas: "one" 
+                            "two"
+                             "three" 
+                             "four"
+                             "five" 
+                             "six";
+        grid-gap: 100px;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+
+
+@media (max-width: 250px) {
+    .text{
+        display: none;
+    }
+    .loop{
+        display: inline;
+        filter: invert(1);
+    }
+.searchBar>input{
+    width: 75px;
+}
+
 }
 

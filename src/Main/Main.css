@@ -1,0 +1,208 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden; 
+    background-color: #F2F2F2;
+    color: #4B3D3D;
+    font-family: 'Roboto',sans-serif;
+
+}
+
+.title{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+}
+input{
+    width: 45%;
+    height: 65px;
+    padding-left: 15px;
+    margin: 10px;
+    border-radius: 25px;
+    background-color: transparent;
+    border: solid 2px #702B2B;
+    color: #702B2B;
+    font-weight: bold;
+}
+
+
+.btn{
+    height: 60px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #702B2B;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.btn:active{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+.searchBar .btn:hover{
+    background-color: #4B3D3D;
+}
+
+.searchBar{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.sectionTwo{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.items{
+    width: 250px;
+    height: 350px;
+    border-radius: 30px;
+    background: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.items:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
+    transition: 0.5s;
+}
+.items:active{
+    transform: scale(1);
+    transition: 0.5s;
+}
+.cards{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-rows: repeat(2, 300px);
+    grid-template-areas: "one two three"
+                         "four five six";
+    grid-gap: 100px;
+}
+#main{
+    background-color: #F2F2F2;
+}
+.one{
+    grid-area: one;
+}
+.two{
+    grid-area: two;
+}
+.three{
+    grid-area: three;
+}
+.three>.littleCard{
+    position: relative;
+    top: -20px;
+}
+.four{
+    grid-area: four;
+
+}
+.five{
+    grid-area: five;
+
+}
+.six{
+    grid-area: six;
+}
+.six>.littleCard{
+    position: relative;
+    top: -40px;
+}
+
+
+.items p{
+    opacity: 0;
+    transition: 0.5s;
+}
+.items>p{
+    font-family: 'Roboto',sans-serif;
+    font-size: 14px;
+    text-align: center;
+    color: #4B3D3D;
+}
+.items:hover>p{
+    opacity: 1;
+    transition: 0.5s;
+}
+
+.items:hover{
+    cursor: pointer;
+}
+
+p,h2{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1{
+    font-size: 35px;
+}
+.littleCard{
+    width: 90%;
+    height: 60%;
+    border: solid 1px #4B3D3D;
+    position: relative;
+    top: -30px;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.hidden{
+    overflow: hidden;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #702B2B; /* Texte violet sur hover des liens */
+}
+
+.imagesParagraphe{
+    display: grid;
+    grid-template-columns: 350px  100px;
+    grid-template-rows: 70px  30px;
+    grid-template-areas: "mct foxy"
+                         "foxyPara foxy";
+}
+.mct{
+    grid-area: mct;
+    width: 100%;
+}
+.foxy{
+    grid-area:foxy;
+}
+.foxyPara{
+    grid-area:foxyPara;
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    color: #702B2B;
+}
+

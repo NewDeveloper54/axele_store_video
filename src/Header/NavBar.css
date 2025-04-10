@@ -126,19 +126,18 @@ img{
     align-items: center;
     height: 500px;
   }
+
+
+  .links{
+    width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+}
+
   }
 
 
-  @media (max-width:300px) {
-    .links{
-      width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  }
-
-
-  
-  }
+ 
 
 

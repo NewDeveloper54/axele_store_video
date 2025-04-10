@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useState} from "react";
 import "./Main.css";
 
 import { useTheme } from "../ThemeContext";
@@ -13,6 +13,37 @@ import partenaire from "../assets/accord.png";
 import gerer from "../assets/gerer.png";
 
 const Main = () => {
+
+  const [buttonC,setButtonC]=useState(false);
+  const [searchTerm, setSearchTerm] = useState(""); 
+
+  
+
+
+
+  const itemsTab = [
+    { title :"RENDEZ-VOUS", image:rendezVousImg ,description :"prenez rendez vous pour effectuer vôtre controle technique", link:"https://www.moncontroletechnique.fr/rechercher-un-centre-de-controle-technique", className: " items one"},
+    { title :"RECHERCHE", image:rechercheImg,description :"recherchez des centres partenaires en fonction de vôtre localisation", link:"https://www.moncontroletechnique.fr/", className: "items two"},
+    { title :"INFOS", image:info,description :"processus, points de contrôle et conseils pour préparer vôtre véhicule", link:"https://www.moncontroletechnique.fr/#block-informationssurlecontroletechnique", className: "items three"},
+    { title :"GERER MES RENDEZ-VOUS", image:gerer,description :"modifiez ou annulez vôtre rendez-vous existant", link:"https://www.moncontroletechnique.fr/annulation_rdv", className: "items four"},
+    { title :"CONTACT", image:contactImg,description :"obtenez de l'aide ou des informations supplémentaires", link:"https://www.moncontroletechnique.fr/contactez-nous", className: "items five"},
+    { title :"DEVENIR PARTENAIRE", image:partenaire,description :"prenez rendez vous et on vous aidera", link:"https://www.protechnologies.fr/devenir-controleur-technique", className: "items six"}
+  ];
+
+  let itemsFiltre = itemsTab;
+
+  const handleButtonC =()=>{
+    setButtonC(true);
+  };
+   
+
+  
+if ( buttonC && searchTerm) {
+   itemsFiltre = itemsTab.filter(item => item.title.toLowerCase().includes(searchTerm.toLowerCase()));
+}
+
+
+
 
 
   const { isDarkMode } = useTheme();
@@ -50,8 +81,12 @@ const Main = () => {
 
         </div>
         <div className="searchBar">
-          <input type="text" placeholder="type here" />
-          <button className="btn">
+          <input type="text" 
+          placeholder="type here" 
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          />
+          <button onClick={handleButtonC}  className="btn">
             <span className="text">Recherche</span> 
             <img className="loop" src={rechercheImg} alt="nothing yet"  height="30" width="30" />
             </button>
@@ -59,73 +94,21 @@ const Main = () => {
       </section>
 
       <section id="sectionTwo" className="sectionTwo">
-        <h1>Toutes vos démarches en un clic :</h1>
         <div className="cards">
-        <a href="https://www.moncontroletechnique.fr/" target="_blank">
-          <div className="items one">
-         
-            <div className="littleCard">
-              <img src={rendezVousImg} height="80" width="80" alt="nothing yet" />
-              <h2>RENDEZ-VOUS</h2>
-            </div>
-            <p>prenez rendez vous pour effectuer vôtre controle technique</p>
-          </div>
-          </a>
-
-
-          <a href="https://www.moncontroletechnique.fr/" target="_blank">
-          <div className="items two">
-            <div className="littleCard">
-              <img src={rechercheImg}  alt="nothing yet" />
-              <h2>RECHERCHE</h2>
-            </div>
-            <p>recherchez des centres partenaires en fonction de vôtre localisation</p>
-          </div>
-        </a>
-
-        <a href="https://www.moncontroletechnique.fr/#block-informationssurlecontroletechnique " target="_blank">
-          <div className="items three">
-            <div className="littleCard">
-              <img src={info} height="70" width="70" alt="nothing yet" />
-              <h2>INFOS</h2>
-            </div>
-            <p>Vous trouverez le processus, les points de contrôle, et les conseils pour préparer vôtre véhicule</p>
-          </div>
-        </a>
-
-
-        <a href="https://www.moncontroletechnique.fr/annulation_rdv" target="_blank">
-          <div className="items four">
-            <div className="littleCard">
-              <img src={gerer} height="80" width="80" alt="nothing yet" />
-              <h2>GERER MES RENDEZ-VOUS</h2>
-            </div>
-            <p>modifiez ou annulez vôtre rendez-vous existant</p>
-          </div>
-        </a>
-
-        <a href="https://www.moncontroletechnique.fr/contactez-nous" target="_blank">
-          <div className="items five">
-            <div className="littleCard">
-              <img src={contactImg} height="80" width="80" alt="nothing yet" />
-              <h2>CONTACT</h2>
-            </div>
-            <p>obtenez de l'aide ou des informations supplémentaires</p>
-          </div>
-        </a>
-
-        <a href="https://www.protechnologies.fr/devenir-controleur-technique" target="_blank">
-          <div className="items six">
-            <div className="littleCard">
-              <img src={partenaire} height="80" width="80" alt="nothing yet" />
-              <h2>DEVENIR PARTENAIRE</h2>
-            </div>
-            <p>prenez rendez vous et on vous aidera</p>
-          </div>
-        </a>
-
+          {itemsFiltre.map((item) => (
+            <a href={item.link} target="_blank">
+              <div className={`${item.className}`}>
+                <div className="littleCard">
+                <img src={item.image} height="80" width="80" alt="nothing yet" />
+                  <h2>{item.title}</h2>
+                </div>
+                <p>{item.description}</p>
+              </div>
+            </a>
+          ))}
         </div>
       </section>
+
     </div>
   );
 };

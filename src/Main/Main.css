@@ -139,18 +139,21 @@ input{
 
 
 .items p{
-    opacity: 0;
     transition: 0.5s;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 .items>p{
     font-family: 'Roboto',sans-serif;
     font-size: 14px;
     text-align: center;
-    color: #4B3D3D;
+    color: black;
+    font-weight: bold;
 }
 .items:hover>p{
     opacity: 1;
     transition: 0.5s;
+    color: #702B2B;
 }
 
 .items:hover{
@@ -176,6 +179,7 @@ h1{
     justify-content: center;
     align-items: center;
 }
+
 
 
 .hidden{

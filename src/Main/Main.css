@@ -7,6 +7,16 @@ html, body {
     font-family: 'Roboto',sans-serif;
 
 }
+p{
+    width: 300px;
+    font-weight: bold;
+    font-family: ro;
+}
+
+#main{
+    /*background-color: #371F4B;*/
+}
+
 
 .title{
     font-family: Arial, Helvetica, sans-serif;
@@ -72,16 +82,16 @@ input{
 }
 
 .items{
-    width: 250px;
     height: 350px;
-    border-radius: 30px;
-    background: white;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px inset;
+    width: 400px;
+   
     transition: 0.5s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 70px;
+
 }
 .items:hover{
     transform: scale(1.05);
@@ -96,12 +106,26 @@ input{
 .cards{
     margin-top: 100px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    grid-template-rows: repeat(2, 300px);
-    grid-template-areas: "one two three"
-                         "four five six";
-    grid-gap: 100px;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: 1fr;
+
 }
+
+/*
+
+.prioritaire{
+    display: flex;
+    justify-content: center;
+}
+.secondaire{
+    margin-top: 80px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+*/
+
+
 .m{
     background-color: #F2F2F2;
 }
@@ -110,31 +134,50 @@ input{
 }
 .one{
     grid-area: one;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    border-radius: 30px;
+    background: linear-gradient(145deg, #a3ddea, #d8edeb);
+    box-shadow:  5px 5px 37px #bababa,
+                 -5px -5px 37px #ffffff;
 }
 .two{
+    height: 300px;
+    width: 350px;
     grid-area: two;
+    
+
+
+    border-radius: 30px;
+    background: linear-gradient(145deg, lightskyblue, blue);
+    box-shadow:  5px 5px 37px #bababa,
+                 -5px -5px 37px #ffffff;
 }
+.two>img{
+    filter: invert(1);
+}
+
+
+
 .three{
+    height: 300px;
+    width: 350px;
     grid-area: three;
+
+
+    border-radius: 30px;
+    background: linear-gradient(180deg, #54e88f, #42ce26);
+    box-shadow:  5px 5px 37px #bababa,
+                 -5px -5px 37px #ffffff;
 }
 .three>.littleCard{
     position: relative;
     top: -20px;
-}
-.four{
-    grid-area: four;
-
-}
-.five{
-    grid-area: five;
-
-}
-.six{
-    grid-area: six;
-}
-.six>.littleCard{
-    position: relative;
-    top: -40px;
 }
 
 
@@ -161,8 +204,8 @@ input{
 }
 
 p,h2{
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+    color: #EB5A35;
 }
 h1{
     font-size: 35px;
@@ -170,7 +213,6 @@ h1{
 .littleCard{
     width: 90%;
     height: 60%;
-    border: solid 1px #4B3D3D;
     position: relative;
     top: -30px;
     border-radius: 25px;
@@ -178,6 +220,7 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    border: solid 3px red;
 }
 
 
@@ -188,6 +231,9 @@ h1{
 a{
     color: black;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 a:hover {
     color: #702B2B; /* Texte violet sur hover des liens */
@@ -275,3 +321,20 @@ a:hover {
 
 }
 
+
+
+
+.one{
+    animation: showw 1.5s infinite;
+}
+@keyframes showw {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

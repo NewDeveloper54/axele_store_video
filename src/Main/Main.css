@@ -34,6 +34,7 @@ p{
 
 
 .sectionTwo{
+    flex-grow: 1;
     height: 100%;
     width: auto;
     display: flex;
@@ -51,8 +52,8 @@ p{
 }
 
 .items{
-    height: 393px;
-    width: 443px;
+    height: 400px;
+    width: 450px;
    
     transition: 0.5s;
     display: flex;
@@ -110,8 +111,8 @@ align-items: center;
                  -5px -5px 37px #522476;
 }
 .two{
-    height: 343px;
-    width: 393px;
+    height: 350px;
+    width: 400px;
     grid-area: two;
     
 
@@ -128,8 +129,8 @@ align-items: center;
 
 
 .three{
-    height: 343px;
-    width: 393px;
+    height: 350px;
+    width: 400px;
     grid-area: three;
 
 
@@ -138,9 +139,17 @@ align-items: center;
     box-shadow:  5px 5px 37px #371F4B,
                  -5px -5px 37px #371F4B;
 }
+#main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
 .three>.littleCard{
     position: relative;
     top: -20px;
+
 }
 
 

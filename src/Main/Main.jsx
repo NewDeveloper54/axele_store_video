@@ -81,12 +81,19 @@ const Main = () => {
 
 <a href="">
 
+
+<a
+              href="https://www.moncontroletechnique.fr/annulation_rdv"
+              target="_blank"
+            >
+
            
   <div className="items three">
     
     <h2 className="contact">Nos vidéos</h2>
     
   </div>
+  </a>
   
 
 

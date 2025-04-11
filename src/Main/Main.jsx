@@ -1,5 +1,10 @@
 import React from "react";
 import "./Main.css";
+import { Link } from "react-router-dom";
+
+
+
+
 
 import { useTheme } from "../ThemeContext";
 
@@ -11,6 +16,8 @@ import rechercheImg from "../assets/symbole-de-linterface-de-recherche.png";
 import info from "../assets/information.png";
 import partenaire from "../assets/traiter.png";
 import gerer from "../assets/gerer.png";
+import annuler from "../assets/annule.png";
+import Infos from "./infos";
 
 const Main = () => {
   const { isDarkMode } = useTheme();
@@ -58,7 +65,7 @@ const Main = () => {
                   width="90"
                   alt="nothing yet"
                 />
-                <h2>RENDEZ-VOUS</h2>
+                <h2 className="rdv">RENDEZ-VOUS</h2>
               </div>
               <p>prenez rendez vous pour effectuer vôtre controle technique</p>
             </a>
@@ -68,8 +75,8 @@ const Main = () => {
               target="_blank"
             >
               <div className="items two">
-                <img src={info} height="70" width="70" alt="nothing yet" />
-                <h2>INFOS</h2>
+                <img src={annuler} height="80" width="80" alt="nothing yet" />
+                <h2 className="infos">MODIFIER / ANNULER RENDEZ-VOUS</h2>
                 
               </div>
               <p>
@@ -78,22 +85,23 @@ const Main = () => {
                 </p>
             </a>
 
-            <a
-              href="https://www.moncontroletechnique.fr/contactez-nous"
-              target="_blank"
-            >
-              <div className="items three">
-                <img
-                  src={contactImg}
-                  height="80"
-                  width="80"
-                  alt="nothing yet"
-                />
-                <h2>CONTACT</h2>
-              </div>
-              <p>obtenez de l'aide ou des informations supplémentaires</p>
 
-            </a>
+            <Link to="/infos">
+  <div className="items three">
+    <img
+      src={info}
+      height="80"
+      width="80"
+      alt="nothing yet"
+    />
+    <h2 className="contact">INFOS</h2>
+    
+  </div>
+  <p>
+      processus, points de contrôle et conseils pour préparer votre véhicule
+    </p>
+</Link>
+
 
             
         </div>

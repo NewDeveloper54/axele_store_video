@@ -1,23 +1,10 @@
-html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden; 
-    background-color: #F2F2F2;
-    color: #4B3D3D;
-    font-family: 'Roboto',sans-serif;
-
-}
-p{
-    width: 300px;
-    font-weight: bold;
-    font-family: ro;
-    margin-top: -30px;
-}
 
 
 
 
-.title{
+
+
+.infotitle{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
     display: flex;
@@ -26,10 +13,36 @@ p{
 }
 
 
+.btn{
+    height: 60px;
+    width: 100px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #702B2B;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    position: relative;
+    left: -680px;
+    bottom: 60px;
+}
+.btn:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+.btn:active{
+    transform: scale(1);
+    transition: 0.5s;
+}
+
+ .btn:hover{
+    background-color: #4B3D3D;
+}
 
 
-
-.sectionTwo{
+.infosectionTwo{
     height: auto;
     width: auto;
     display: flex;
@@ -39,9 +52,9 @@ p{
     padding: 100px;
 }
 
-.items{
-    height: 350px;
-    width: 400px;
+.infoitems{
+    height: 250px;
+    width: 300px;
    
     transition: 0.5s;
     display: flex;
@@ -51,52 +64,30 @@ p{
     margin: 70px;
 
 }
-.items:hover{
+.infoitems:hover{
     transform: scale(1.05);
     transition: 0.5s;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
     transition: 0.5s;
 }
-.items:active{
+.infoitems:active{
     transform: scale(1);
     transition: 0.5s;
 }
-.cards{
+.infocards{
     margin-top: 100px;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: 1fr;
 
 }
 
-/*
-
-.prioritaire{
-    display: flex;
-    justify-content: center;
-}
-.secondaire{
-    margin-top: 80px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-*/
 
 
-.m{
-    background-color: #F2F2F2;
-}
-.mBlack{
-    background-color: rgb(18, 16, 16);
-}
-.one{
+
+
+
+.infoone{
     grid-area: one;
     
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 
 
     border-radius: 30px;
@@ -104,9 +95,8 @@ align-items: center;
     box-shadow:  5px 5px 37px #bababa,
                  -5px -5px 37px #ffffff;
 }
-.two{
-    height: 300px;
-    width: 350px;
+.infotwo{
+    
     grid-area: two;
     
 
@@ -116,15 +106,14 @@ align-items: center;
     box-shadow:  5px 5px 37px #bababa,
                  -5px -5px 37px #ffffff;
 }
-.three>img{
+.infothree>img{
     filter: invert(1);
 }
 
 
 
-.three{
-    height: 300px;
-    width: 350px;
+.infothree{
+    
     grid-area: three;
 
 
@@ -133,70 +122,42 @@ align-items: center;
     box-shadow:  5px 5px 37px #bababa,
                  -5px -5px 37px #ffffff;
 }
-.three>.littleCard{
+.infothree>.littleCard{
     position: relative;
     top: -20px;
 }
 
 
-.items p{
+.infoitems p{
     transition: 0.5s;
     padding-left: 5px;
     padding-right: 5px;
 }
-.items>p{
+.infoitems>p{
     font-family: 'Roboto',sans-serif;
     font-size: 14px;
     text-align: center;
     color: black;
     font-weight: bold;
 }
-.items:hover>p{
+.infoitems:hover>p{
     opacity: 1;
     transition: 0.5s;
     color: #702B2B;
 }
 
-.items:hover{
+.infoitems:hover{
     cursor: pointer;
 }
 
-p,h2{
-    font-family: 'Roboto',sans-serif;
-    text-align: center;
-    color: #371F4B;
-}
-h1{
-    font-size: 35px;
-}
-
-.rdv{
-    color: #371F4B;
-}
-.infos, .contact{
-    color: white;
-}
 
 
 
-.littleCard{
-    width: 90%;
-    height: 60%;
-    position: relative;
-    top: -30px;
-    border-radius: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: solid 3px red;
-}
 
 
 
-.hidden{
-    overflow: hidden;
-}
+/*
+
 a{
     color: black;
     text-decoration: none;
@@ -206,40 +167,12 @@ a{
 }
 a:hover {
     color: #702B2B; /* Texte violet sur hover des liens */
-}
+  /*
 
-.imagesParagraphe{
-    display: grid;
-    grid-template-columns: 350px  100px;
-    grid-template-rows: 70px  30px;
-    grid-template-areas: "mct foxy"
-                         "foxyPara foxy";
-}
-.mct{
-    grid-area: mct;
-    width: 100%;
-}
-.foxy{
-    grid-area:foxy;
-}
-.foxyPara{
-    grid-area:foxyPara;
-    font-size: small;
-    font-weight: bold;
-    display: flex;
-    justify-content: flex-end;
-    color: #702B2B;
-}
-
-.loop{
-    display: none;
-}
-.text{
-    display: inline;
-}
+*/
 
 @media (max-width: 1000px) {
-    .cards{
+    .infocards{
         margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); 
@@ -256,7 +189,7 @@ a:hover {
 
 
 @media (max-width: 650px) {
-    .cards{
+    .infocards{
         margin-top: 100px;
         display: grid;
         grid-template-columns: repeat(1, 1fr); 
@@ -276,34 +209,21 @@ a:hover {
 
 
 
-@media (max-width: 250px) {
-    .text{
-        display: none;
-    }
-    .loop{
-        display: inline;
-        filter: invert(1);
-    }
-.searchBar>input{
-    width: 75px;
+
+
+
+
+
+
+
+
+
+.troispremieres{
+display: flex;
+justify-content: center;
 }
 
-}
-
-
-
-
-.one{
-    animation: showw 1.5s infinite;
-}
-@keyframes showw {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
+.deuxdernieres{
+display: flex;
+justify-content: center;
 }

@@ -45,8 +45,8 @@ p{
 }
 
 .items{
-    height: 350px;
-    width: 400px;
+    height: 300px;
+    width: 350px;
    
     transition: 0.5s;
     display: flex;
@@ -67,11 +67,7 @@ p{
     transition: 0.5s;
 }
 .cards{
-    margin-top: 100px;
-    display: grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: 1fr;
-
+    border: solid 5px green;
 }
 
 /*
@@ -110,8 +106,8 @@ align-items: center;
                  -5px -5px 37px #522476;
 }
 .two{
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 300px;
     grid-area: two;
     
 
@@ -128,8 +124,8 @@ align-items: center;
 
 
 .three{
-    height: 300px;
-    width: 350px;
+    height: 250px;
+    width: 300px;
     grid-area: three;
 
 

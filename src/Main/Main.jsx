@@ -64,7 +64,7 @@ const Main = () => {
             >
               <div className="items one">
                 
-                <h2 className="rdv">RENDEZ-VOUS</h2>
+                <h2 className="rdv">Prendre rendez-vous</h2>
               </div>
             </a>
 
@@ -73,7 +73,7 @@ const Main = () => {
               target="_blank"
             >
               <div className="items two">
-                <h2 className="infos">MODIFIER / ANNULER RENDEZ-VOUS</h2>
+                <h2 className="infos">Modifer / Supprimer un RDV</h2>
                 
               </div>
               
@@ -84,7 +84,7 @@ const Main = () => {
            
   <div className="items three">
     
-    <h2 className="contact">INFOS</h2>
+    <h2 className="contact">Infos sur le Contrôle Technique</h2>
     
   </div>
   

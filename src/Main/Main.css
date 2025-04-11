@@ -31,7 +31,7 @@ p{
 
 
 .sectionTwo{
-    height: auto;
+    height: 100%;
     width: auto;
     display: flex;
     flex-direction: column;
@@ -66,9 +66,7 @@ p{
     transform: scale(1);
     transition: 0.5s;
 }
-.cards{
-    border: solid 5px green;
-}
+
 
 /*
 

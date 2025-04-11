@@ -9,6 +9,7 @@ html, body {
 
 
 
+
 }
 p{
     width: 300px;
@@ -50,8 +51,8 @@ p{
 }
 
 .items{
-    height: 350px;
-    width: 400px;
+    height: 393px;
+    width: 443px;
    
     transition: 0.5s;
     display: flex;
@@ -109,8 +110,8 @@ align-items: center;
                  -5px -5px 37px #522476;
 }
 .two{
-    height: 300px;
-    width: 350px;
+    height: 343px;
+    width: 393px;
     grid-area: two;
     
 
@@ -127,8 +128,8 @@ align-items: center;
 
 
 .three{
-    height: 300px;
-    width: 350px;
+    height: 343px;
+    width: 393px;
     grid-area: three;
 
 

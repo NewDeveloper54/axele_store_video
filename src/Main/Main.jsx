@@ -59,7 +59,7 @@ const Main = () => {
         <h1>Toutes vos démarches en un clic :</h1>
         <div className="cards">
             <a
-              href="https://www.moncontroletechnique.fr/recherche/ville/54357/Max%C3%A9ville"
+              href="https://www.moncontroletechnique.fr/centre/controle-technique-maxeville"
               target="_blank"
             >
               <div className="items one">
@@ -69,7 +69,7 @@ const Main = () => {
             </a>
 
             <a
-              href="https://www.moncontroletechnique.fr/#block-informationssurlecontroletechnique "
+              href="https://www.moncontroletechnique.fr/annulation_rdv"
               target="_blank"
             >
               <div className="items two">
@@ -84,7 +84,7 @@ const Main = () => {
            
   <div className="items three">
     
-    <h2 className="contact">Infos sur le Contrôle Technique</h2>
+    <h2 className="contact">Nos vidéos</h2>
     
   </div>
   

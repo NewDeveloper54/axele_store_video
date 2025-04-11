@@ -50,8 +50,8 @@ p{
 }
 
 .items{
-    height: 300px;
-    width: 350px;
+    height: 350px;
+    width: 400px;
    
     transition: 0.5s;
     display: flex;
@@ -109,8 +109,8 @@ align-items: center;
                  -5px -5px 37px #522476;
 }
 .two{
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
     grid-area: two;
     
 
@@ -127,8 +127,8 @@ align-items: center;
 
 
 .three{
-    height: 250px;
-    width: 300px;
+    height: 300px;
+    width: 350px;
     grid-area: three;
 
 

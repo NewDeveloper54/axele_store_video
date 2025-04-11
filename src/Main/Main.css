@@ -23,7 +23,7 @@ p{
     font-size: 50px;
     display: flex;
     justify-content: center;
-    padding-top: 200px;
+    padding-top: 20px;
 }
 
 
@@ -38,6 +38,10 @@ p{
     justify-content: center;
     align-items: center;
     padding: 100px;
+    background-color: #371F4B;  
+}
+.sectionTwo>h1{
+    color: white;
 }
 
 .items{
@@ -55,7 +59,7 @@ p{
 .items:hover{
     transform: scale(1.05);
     transition: 0.5s;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
+    box-shadow: rgba(10, 30, 10, 0.75) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
     transition: 0.5s;
 }
 .items:active{
@@ -101,9 +105,9 @@ align-items: center;
 
 
     border-radius: 30px;
-    background: linear-gradient(145deg, #a3ddea, #d8edeb);
-    box-shadow:  5px 5px 37px #bababa,
-                 -5px -5px 37px #ffffff;
+    background: linear-gradient(145deg, #d77b64, #EB5A35);
+    box-shadow:  5px 5px 37px #814dab,
+                 -5px -5px 37px #522476;
 }
 .two{
     height: 300px;
@@ -113,9 +117,9 @@ align-items: center;
 
 
     border-radius: 30px;
-    background: linear-gradient(145deg, lightskyblue, blue);
-    box-shadow:  5px 5px 37px #bababa,
-                 -5px -5px 37px #ffffff;
+    background: linear-gradient(145deg, #d77b64, #EB5A35);
+    box-shadow:  5px 5px 37px #371F4B,
+                 -5px -5px 37px #371F4B;
 }
 .three>img{
     filter: invert(1);
@@ -130,9 +134,9 @@ align-items: center;
 
 
     border-radius: 30px;
-    background: linear-gradient(180deg, #54e88f, #42ce26);
-    box-shadow:  5px 5px 37px #bababa,
-                 -5px -5px 37px #ffffff;
+    background: linear-gradient(180deg, #d77b64, #EB5A35);
+    box-shadow:  5px 5px 37px #371F4B,
+                 -5px -5px 37px #371F4B;
 }
 .three>.littleCard{
     position: relative;
@@ -167,6 +171,9 @@ p,h2{
     text-align: center;
     color: #371F4B;
 }
+.one>h2{
+    color: white;
+}
 h1{
     font-size: 35px;
 }
@@ -190,7 +197,6 @@ h1{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: solid 3px red;
 }
 
 
@@ -210,26 +216,35 @@ a:hover {
 }
 
 .imagesParagraphe{
-    display: grid;
-    grid-template-columns: 350px  100px;
-    grid-template-rows: 70px  30px;
-    grid-template-areas: "mct foxy"
-                         "foxyPara foxy";
+    display: flex ;
+    flex-direction: column;
+    margin-bottom: 20px;
+    
 }
+.imagesOnly{
+    display: flex;
+}
+.pOnly{
+    position: relative;
+    left: 442px;
+    width: 20px;
+}
+.pOnly>p{
+    font-size: 20px;
+    color: #371F4B;
+}
+
+
 .mct{
-    grid-area: mct;
     width: 100%;
 }
-.foxy{
-    grid-area:foxy;
-}
+
 .foxyPara{
     grid-area:foxyPara;
     font-size: small;
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
-    color: #702B2B;
 }
 
 .loop{

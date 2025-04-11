@@ -29,21 +29,27 @@ const Main = () => {
             className="text-xl font-bold flex items-center"
           >
             <div className="imagesParagraphe">
+              <div className="imagesOnly">
               <img
                 src={MCT}
                 alt="Logo Moncontroletechnique.fr"
-                width="100"
-                height="22"
+                width="350"
+                height="52"
                 className="mct"
               />
               <img
                 src={foxy}
                 alt="Foxy"
-                width="66"
-                height="50"
+                width="126"
+                height="100"
                 className="foxy"
               />
+              </div>
+
+              <div className="pOnly">
               <p className="foxyPara">Sécurité et Environnement</p>
+              </div>
+
             </div>
           </a>
         </div>
@@ -57,15 +63,9 @@ const Main = () => {
               target="_blank"
             >
               <div className="items one">
-                <img
-                  src={rendezVousImg}
-                  height="90"
-                  width="90"
-                  alt="nothing yet"
-                />
+                
                 <h2 className="rdv">RENDEZ-VOUS</h2>
               </div>
-              <p>prenez rendez vous pour effectuer vôtre controle technique</p>
             </a>
 
             <a
@@ -73,32 +73,21 @@ const Main = () => {
               target="_blank"
             >
               <div className="items two">
-                <img src={annuler} height="80" width="80" alt="nothing yet" />
                 <h2 className="infos">MODIFIER / ANNULER RENDEZ-VOUS</h2>
                 
               </div>
-              <p>
-                  processus, points de contrôle et conseils pour préparer vôtre
-                  véhicule
-                </p>
+              
             </a>
 
 <a href="">
 
            
   <div className="items three">
-    <img
-      src={info}
-      height="80"
-      width="80"
-      alt="nothing yet"
-    />
+    
     <h2 className="contact">INFOS</h2>
     
   </div>
-  <p>
-      processus, points de contrôle et conseils pour préparer votre véhicule
-    </p>
+  
 
 
 </a>

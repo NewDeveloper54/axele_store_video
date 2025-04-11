@@ -1,6 +1,5 @@
 import React from "react";
 import "./Main.css";
-import { Link } from "react-router-dom";
 
 
 
@@ -17,7 +16,6 @@ import info from "../assets/information.png";
 import partenaire from "../assets/traiter.png";
 import gerer from "../assets/gerer.png";
 import annuler from "../assets/annule.png";
-import Infos from "./infos";
 
 const Main = () => {
   const { isDarkMode } = useTheme();
@@ -85,8 +83,9 @@ const Main = () => {
                 </p>
             </a>
 
+<a href="">
 
-            <Link to="/infos">
+           
   <div className="items three">
     <img
       src={info}
@@ -100,9 +99,9 @@ const Main = () => {
   <p>
       processus, points de contrôle et conseils pour préparer votre véhicule
     </p>
-</Link>
 
 
+</a>
             
         </div>
       </section>

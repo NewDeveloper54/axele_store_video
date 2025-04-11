@@ -17,9 +17,7 @@ const App =() => {
 return (
 <div>
     <ThemeProvider>
-    <Links chnageColor={chnageColor}/>
     <Main isBlack={isBlack}/>
-    <Footer/>
     </ThemeProvider>
 </div>
 

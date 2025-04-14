@@ -44,8 +44,8 @@ function Video() {
 <div className="title">
           
 
-            <div className="imagesParagraphe">
-              <div className="imagesOnly">
+            <div className="imagesParagrapheVideo">
+              <div className="imagesOnlyVideo">
               <img
                 src={MCT}
                 alt="Logo Moncontroletechnique.fr"
@@ -62,7 +62,7 @@ function Video() {
               />
               </div>
 
-              <div className="pOnly">
+              <div className="pOnlyVideo">
               <p className="foxyPara">Sécurité et Environnement</p>
               </div>
 
@@ -81,7 +81,7 @@ function Video() {
       <iframe
         src="https://drive.google.com/file/d/1Gdr4Pa23abTOkLfGYKr0ramTRi6Dhxor/preview"
         width="800"
-        height="450"
+        height="500"
         allow="autoplay"
         title="Vidéo"
         style={{ border: "none" }}

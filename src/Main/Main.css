@@ -106,8 +106,8 @@ align-items: center;
 
     border-radius: 30px;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
-    box-shadow:  5px 5px 37px #814dab,
-                 -5px -5px 37px #522476;
+    box-shadow:  5px 5px 37px #e36b4d,
+                 -5px -5px 37px #e04f07;
 }
 .two{
     height: 343px;
@@ -310,4 +310,38 @@ a:hover {
     100%{
         transform: scale(1);
     }
+}
+
+
+
+@media (max-width: 980px) {
+    .imagesOnly{
+        display: flex;
+        flex-direction: column;
+    }
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: 30vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    
+}
+
+
+
+@media (max-width: 550px) {
+    .imagesOnly{
+        display: flex;
+        flex-direction: column;
+    }
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: -8vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    
 }

@@ -157,6 +157,10 @@ align-items: center;
     box-shadow: 5px 5px 37px #371F4B,
                 -5px -5px 37px #371F4B;
   }
+
+  .play{
+    filter: invert(1);
+  }
   
   .three::before {
     content: "";

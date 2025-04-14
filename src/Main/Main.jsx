@@ -20,6 +20,7 @@ import partenaire from "../assets/traiter.png";
 import gerer from "../assets/gerer.png";
 import annuler from "../assets/annule.png";
 import video from "../assets/video.mov";
+import play from "../assets/joue.png";
 
 const Main = () => {
   const { isDarkMode } = useTheme();
@@ -90,8 +91,10 @@ const Main = () => {
 
           <Link to="/video">
   <div className="items three">
+    <img 
+    height="75" width="75"
+    className="play" src={play} alt="" />
     
-    <h2 className="contact">Nos Savoir-faire</h2>
     
   </div>
   </Link> 

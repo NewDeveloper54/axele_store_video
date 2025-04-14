@@ -339,9 +339,61 @@ a:hover {
     .pOnly{
         position: relative;
         width: 20px;
-        left: -8vw;
+        left: -5vw;
         bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
       
+    }
+    .mct{
+        width: 480px;
+    }
+    
+}
+
+
+@media (max-width: 800px) {
+    
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: -3.5vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    .mct{
+        width: 680px;
+    }
+    
+}
+
+
+
+@media (max-width: 710px) {
+    
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: -4vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    .mct{
+        width: 580px;
+    }
+    
+}
+
+
+@media (max-width: 610px) {
+    
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: -4vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    .mct{
+        width: 480px;
     }
     
 }

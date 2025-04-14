@@ -51,8 +51,8 @@
 }
 .pOnlyVideo{
     position: relative;
+    left: 442px;
     width: 20px;
-    left: 30vw; /* décale vers la droite de 30% de la largeur de la fenêtre */
   
 }
 .pOnlyVideo>p{
@@ -94,7 +94,7 @@
 }
 
 
-@media (max-width: 550px) {
+@media (max-width: 710px) {
     .imagesOnlyVideo{
         display: flex;
         flex-direction: column;
@@ -102,7 +102,7 @@
     .pOnlyVideo{
         position: relative;
         width: 20px;
-        left: -8vw;
+        left: -5vw;
         bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
       
     }

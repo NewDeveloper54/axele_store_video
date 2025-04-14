@@ -95,20 +95,61 @@ align-items: center;
 .mBlack{
     background-color: rgb(18, 16, 16);
 }
-.one{
-    grid-area: one;
-    
+.one {
+  
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-
-    border-radius: 30px;
+  
+    border-radius: 80px 120px 10px 120px;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
-    box-shadow:  5px 5px 37px #e36b4d,
-                 -5px -5px 37px #e04f07;
-}
+    box-shadow: 5px 5px 37px #e36b4d,
+                -5px -5px 37px #e04f07;
+  
+
+                animation: amar 5s infinite;
+  }
+  
+  @keyframes amar {
+    0% {
+      border-radius: 80px 120px 10px 120px;
+    }
+    50% {
+      border-radius: 30px 30px 100px 80px;
+    }
+    100% {
+      border-radius: 80px 120px 10px 120px;
+    }
+  }
+  
+  
+
+
+
+
+
+
+/* HTML: <div class="loader"></div> */
+
+  @keyframes l1{
+    12.5% {border-radius: 37% 63% 70% 30% / 30% 62% 38% 70%}
+    25%   {border-radius: 50% 50% 70% 30% / 52% 62% 38% 48%}
+    37.5% {border-radius: 33% 67% 18% 82% / 52% 75% 25% 48%}
+    50%   {border-radius: 73% 27% 18% 82% / 52% 32% 68% 48%}
+    62.5% {border-radius: 73% 27% 74% 26% / 64% 32% 68% 36%}
+    75%   {border-radius: 84% 16% 15% 85% / 55% 79% 21% 45%}
+    87.5% {border-radius: 12% 88% 69% 31% / 10% 66% 34% 90%}
+  }
+
+
+
+
+
+
+  
+
+
 .two{
     height: 343px;
     width: 393px;
@@ -116,33 +157,56 @@ align-items: center;
     
 
 
-    border-radius: 30px;
+    border-radius:80px 30px  80px 30px;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow:  5px 5px 37px #371F4B,
                  -5px -5px 37px #371F4B;
+
+                 animation: l1 20s infinite ease-in-out;
+
 }
-.three>img{
-    filter: invert(1);
-}
 
-
-
-.three{
+.three {
+    position: relative;
     height: 343px;
     width: 393px;
     grid-area: three;
+  
+    border-radius: 30px 80px 30px 80px;
+    overflow: hidden;
+    z-index: 0; /* important */
+  
+    box-shadow: 5px 5px 37px #371F4B,
+                -5px -5px 37px #371F4B;
+  }
+  
+  .three::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url('../assets/image.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px) brightness(0.5); /* flou + obscurcissement */
+    z-index: -1; /* met l'image derrière le contenu */
+  }
 
 
-    border-radius: 30px;
-    background: linear-gradient(180deg, #EB5A35, #EB5A35);
-    box-shadow:  5px 5px 37px #371F4B,
-                 -5px -5px 37px #371F4B;
-}
+
+
 
 
 .three>.littleCard{
     position: relative;
     top: -20px;
+}
+
+
+.items>h2{
+    font-size: 30px;
+}
+.one>h2{
+    font-size: 45px;
 }
 
 
@@ -153,7 +217,7 @@ align-items: center;
 }
 .items>p{
     font-family: 'Roboto',sans-serif;
-    font-size: 14px;
+    font-size: 20px;
     text-align: center;
     color: black;
     font-weight: bold;

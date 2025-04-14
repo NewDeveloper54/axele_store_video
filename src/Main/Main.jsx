@@ -1,6 +1,9 @@
 import React from "react";
 import "./Main.css";
 
+import { Link } from "react-router-dom";
+
+
 
 
 
@@ -16,6 +19,7 @@ import info from "../assets/information.png";
 import partenaire from "../assets/traiter.png";
 import gerer from "../assets/gerer.png";
 import annuler from "../assets/annule.png";
+import video from "../assets/video.mov";
 
 const Main = () => {
   const { isDarkMode } = useTheme();
@@ -79,25 +83,22 @@ const Main = () => {
               
             </a>
 
-<a href="">
 
 
-<a
-              href="https://www.moncontroletechnique.fr/annulation_rdv"
-              target="_blank"
-            >
 
-           
+
+
+          <Link to="/video">
   <div className="items three">
     
-    <h2 className="contact">Nos vidéos</h2>
+    <h2 className="contact">Nos Savoir-faire</h2>
     
   </div>
-  </a>
-  
+  </Link> 
 
 
-</a>
+
+
             
         </div>
       </section>

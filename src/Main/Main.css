@@ -256,37 +256,11 @@ a:hover {
     display: inline;
 }
 
-@media (max-width: 1000px) {
-    .cards{
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); 
-        grid-template-rows: repeat(3, 300px);
-        grid-template-areas: "one two"
-                             "three four"
-                             "five six";
-        grid-gap: 100px;
-    }
-    h1{
-        text-align: center;
-    }
-}
+
 
 
 @media (max-width: 650px) {
-    .cards{
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: repeat(1, 1fr); 
-        grid-template-rows: repeat(6, 300px);
-        grid-template-areas: "one" 
-                            "two"
-                             "three" 
-                             "four"
-                             "five" 
-                             "six";
-        grid-gap: 100px;
-    }
+    
     h1{
         text-align: center;
     }
@@ -294,19 +268,31 @@ a:hover {
 
 
 
-@media (max-width: 250px) {
-    .text{
-        display: none;
-    }
-    .loop{
-        display: inline;
-        filter: invert(1);
-    }
-.searchBar>input{
-    width: 75px;
+@media (max-width: 580px) {
+    
+.items{
+    height: 343px;
+    width: 393px;
+}
+.two,.three{
+    height: 293px;
+    width: 343px;
 }
 
 }
+
+@media (max-width: 480px) {
+    
+    .items{
+        height: 293px;
+        width: 343px;
+    }
+    .two,.three{
+        height: 243px;
+        width: 293px;
+    }
+    
+    }
 
 
 

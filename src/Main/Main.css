@@ -397,3 +397,17 @@ a:hover {
     }
     
 }
+@media (max-width: 510px) {
+    
+    .pOnly{
+        position: relative;
+        width: 20px;
+        left: -6.5vw;
+        bottom: 120px; /* décale vers la droite de 30% de la largeur de la fenêtre */
+      
+    }
+    .mct{
+        width: 380px;
+    }
+    
+}

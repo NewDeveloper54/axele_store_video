@@ -1,3 +1,16 @@
+#here{
+    overflow: hidden;
+    height: 2000px;
+}
+
+.titleVideo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
 
 .btn{
     height: 60px;
@@ -35,8 +48,6 @@
     align-items: center;
     padding: 100px;
     background-color: #371F4B;  
-
-
 }
 
 .imagesParagrapheVideo{

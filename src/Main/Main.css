@@ -169,7 +169,7 @@ align-items: center;
     background-image: url('../assets/image.png');
     background-size: cover;
     background-position: center;
-    filter: blur(3px) brightness(0.5); /* flou + obscurcissement */
+    filter: blur(2px) brightness(0.5); /* flou + obscurcissement */
     z-index: -1; /* met l'image derrière le contenu */
   }
 

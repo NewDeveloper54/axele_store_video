@@ -3,7 +3,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Video.css";
 
-import videoFile from "../assets/video.mov";
+import videoFile from "../assets/Video.mp4";
 
 import MCT from "../assets/logo-MCT.svg";
 import foxy from "../assets/foxy.svg";

@@ -85,6 +85,8 @@ p{
 
 
 .one {
+
+    border: solid 3px  white;
   
     display: flex;
     flex-direction: column;
@@ -96,8 +98,7 @@ p{
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     
 
- 
-  
+
   }
   
   
@@ -182,7 +183,12 @@ p{
 }
 .one>h2{
     font-size: 50px;
+display: flex;
+       flex-direction: column;
+    
 }
+
+
 
 
 

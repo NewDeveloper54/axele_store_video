@@ -63,7 +63,8 @@ const Main = () => {
               href="https://www.moncontroletechnique.fr/centre/controle-technique-maxeville"
             >
               <div className="items one">
-                <h2 className="rdv">Prendre rendez-vous</h2>
+                <h2 className="rdv">Prendre   
+                  <span>rendez-vous</span></h2>
                 
               </div>
             </a>

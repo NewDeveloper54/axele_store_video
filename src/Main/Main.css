@@ -121,6 +121,8 @@ p{
 
 
 .two{
+    border: solid 3px  white;
+
     height: 343px;
     width: 353px;
     grid-area: two;
@@ -137,6 +139,8 @@ p{
 
 
 .three {
+    border: solid 3px  white;
+
     position: relative;
     height: 343px;
     width: 353px;

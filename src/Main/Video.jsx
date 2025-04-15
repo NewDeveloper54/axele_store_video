@@ -29,6 +29,9 @@ function Video() {
         alignItems: "center",
       }}
     >
+
+
+      <div className="aaa">
       <div className="titleVideo">
         <div className="imagesParagrapheVideo">
           <div className="imagesOnlyVideo">
@@ -70,6 +73,8 @@ function Video() {
           title="Vidéo"
           style={{ border: "none" }}
         ></iframe>
+      </div>
+
       </div>
     </div>
   );

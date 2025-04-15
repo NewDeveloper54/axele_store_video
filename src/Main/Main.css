@@ -52,7 +52,7 @@ p{
 
 .items{
     height: 393px;
-    width: 443px;
+    width: 413px;
    
     transition: 0.5s;
     display: flex;
@@ -60,9 +60,15 @@ p{
     justify-content: center;
     align-items: center;
     margin: 70px;
+    box-shadow: rgba(10, 30, 10, 0.75) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
+
+
+
 
 }
 .items:hover{
+    
+
     transform: scale(1.05);
     transition: 0.5s;
     box-shadow: rgba(10, 30, 10, 0.75) 0px 30px 50px -12px, rgba(0, 0, 0, 0.3) 0px 18px 26px -18px;
@@ -74,27 +80,10 @@ p{
 }
 
 
-/*
-
-.prioritaire{
-    display: flex;
-    justify-content: center;
-}
-.secondaire{
-    margin-top: 80px;
-display: flex;
-justify-content: center;
-align-items: center;
-}
-*/
 
 
-.m{
-    background-color: #F2F2F2;
-}
-.mBlack{
-    background-color: rgb(18, 16, 16);
-}
+
+
 .one {
   
     display: flex;
@@ -102,12 +91,14 @@ align-items: center;
     justify-content: center;
     align-items: center;
   
-    border-radius: 135px;
+    border-radius: 35%;
+    
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow: 5px 5px 37px #e36b4d,
                 -5px -5px 37px #e04f07;
-  
 
+ 
+  
   }
   
   
@@ -131,12 +122,12 @@ align-items: center;
 
 .two{
     height: 343px;
-    width: 393px;
+    width: 363px;
     grid-area: two;
     
 
 
-    border-radius: 135px;
+    border-radius: 35%;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow:  5px 5px 37px #371F4B,
                  -5px -5px 37px #371F4B;
@@ -144,18 +135,21 @@ align-items: center;
 
 }
 
+
 .three {
     position: relative;
     height: 343px;
-    width: 393px;
+    width: 363px;
     grid-area: three;
   
-    border-radius: 135px;
+    border-radius: 35%;
     overflow: hidden;
     z-index: 0; /* important */
   
     box-shadow: 5px 5px 37px #371F4B,
                 -5px -5px 37px #371F4B;
+
+
   }
 
   .play{
@@ -188,15 +182,11 @@ align-items: center;
     font-size: 30px;
 }
 .one>h2{
-    font-size: 45px;
+    font-size: 50px;
 }
 
 
-.items p{
-    transition: 0.5s;
-    padding-left: 5px;
-    padding-right: 5px;
-}
+
 .items>p{
     font-family: 'Roboto',sans-serif;
     font-size: 20px;
@@ -204,11 +194,7 @@ align-items: center;
     color: black;
     font-weight: bold;
 }
-.items:hover>p{
-    opacity: 1;
-    transition: 0.5s;
-    color: #702B2B;
-}
+
 
 .items:hover{
     cursor: pointer;
@@ -221,6 +207,7 @@ p,h2{
 }
 .one>h2{
     color: white;
+
 }
 h1{
     font-size: 35px;
@@ -258,6 +245,7 @@ a{
     display: flex;
     flex-direction: column;
     align-items: center;
+
 }
 a:hover {
     color: #702B2B; /* Texte violet sur hover des liens */

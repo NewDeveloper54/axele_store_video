@@ -29,10 +29,7 @@ const Main = () => {
     <div className={isDarkMode ? "mBlack" : "m"} id="main">
       <section id="sectionOne" className="sectionOne">
         <div className="title">
-          <a
-            href="https://www.moncontroletechnique.fr/"
-            className="text-xl font-bold flex items-center"
-          >
+          
             <div className="imagesParagraphe">
               <div className="imagesOnly">
               <img
@@ -56,7 +53,6 @@ const Main = () => {
               </div>
 
             </div>
-          </a>
         </div>
       </section>
 

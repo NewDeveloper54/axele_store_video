@@ -3,6 +3,8 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Video.css";
 
+import videoFile from "../assets/video.mov";
+
 import MCT from "../assets/logo-MCT.svg";
 import foxy from "../assets/foxy.svg";
 import { useEffect } from "react";
@@ -71,14 +73,17 @@ function Video() {
 
       <div className="sectionTwoVideo">
         
-        <iframe
-          src="https://drive.google.com/file/d/1Gdr4Pa23abTOkLfGYKr0ramTRi6Dhxor/preview"
-          width="1000"
-          height="700"
-          allow="autoplay"
-          title="Vidéo"
-          style={{ border: "none" }}
-        ></iframe>
+
+      <video
+            src={videoFile}
+            autoPlay
+            muted
+            loop
+            controls
+            playsInline
+            className="customVideo"
+          />
+
       </div>
 
       </div>

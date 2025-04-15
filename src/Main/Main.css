@@ -52,7 +52,7 @@ p{
 
 .items{
     height: 393px;
-    width: 423px;
+    width: 403px;
    
     transition: 0.5s;
     display: flex;
@@ -91,7 +91,7 @@ p{
     justify-content: center;
     align-items: center;
   
-    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
+    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
     
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow: 5px 5px 37px #e36b4d,
@@ -122,12 +122,12 @@ p{
 
 .two{
     height: 343px;
-    width: 373px;
+    width: 353px;
     grid-area: two;
     
 
 
-    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
+    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow:  5px 5px 37px #371F4B,
                  -5px -5px 37px #371F4B;
@@ -139,10 +139,10 @@ p{
 .three {
     position: relative;
     height: 343px;
-    width: 373px;
+    width: 353px;
     grid-area: three;
   
-    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
+    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
     overflow: hidden;
     z-index: 0; /* important */
   

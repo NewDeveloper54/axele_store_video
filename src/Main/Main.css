@@ -91,7 +91,7 @@ p{
     justify-content: center;
     align-items: center;
   
-    border-radius: 50% 50% 50% 50% / 32% 32% 32% 32%;
+    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
     
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow: 5px 5px 37px #e36b4d,
@@ -127,7 +127,7 @@ p{
     
 
 
-    border-radius: 50% 50% 50% 50% / 32% 32% 32% 32%;
+    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
     background: linear-gradient(145deg, #EB5A35, #EB5A35);
     box-shadow:  5px 5px 37px #371F4B,
                  -5px -5px 37px #371F4B;
@@ -142,7 +142,7 @@ p{
     width: 373px;
     grid-area: three;
   
-    border-radius: 50% 50% 50% 50% / 32% 32% 32% 32%;
+    border-radius: 48% 48% 48% 48% / 38% 38% 38% 38%;
     overflow: hidden;
     z-index: 0; /* important */
   

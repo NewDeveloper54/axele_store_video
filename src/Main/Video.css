@@ -139,8 +139,10 @@
 .sectionTwoVideo {
 
     border: solid 5px pink;
-    width: 100vw;          /* Prend toute la largeur de l’écran */
-    height: 100%;         /* Prend toute la hauteur de l’écran */
+    width: 80%;          /* Prend toute la largeur de l’écran */
+    height: 80%
+    
+    ;         /* Prend toute la hauteur de l’écran */
     display: flex;
     justify-content: center;
     align-items: center;

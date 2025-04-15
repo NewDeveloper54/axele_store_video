@@ -60,16 +60,7 @@ function Video() {
       </div>
 
 
-<div className="bouton">
-      <button
-          className="btn"
-          onClick={() => navigate(-1)}
-          style={{ marginBottom: "20px", marginTop: "100px" }}
-        >
-          Retour
-        </button>
 
-        </div>
 
       <div className="sectionTwoVideo">
         
@@ -85,6 +76,17 @@ function Video() {
           />
 
       </div>
+
+      <div className="bouton">
+      <button
+          className="btn"
+          onClick={() => navigate(-1)}
+          style={{ marginBottom: "20px", marginTop: "100px" }}
+        >
+          Retour
+        </button>
+
+        </div>
 
       </div>
     </div>

@@ -57,14 +57,20 @@ function Video() {
         </div>
       </div>
 
-      <div className="sectionTwoVideo">
-        <button
+
+<div className="bouton">
+      <button
           className="btn"
           onClick={() => navigate(-1)}
           style={{ marginBottom: "20px", marginTop: "100px" }}
         >
           Retour
         </button>
+
+        </div>
+
+      <div className="sectionTwoVideo">
+        
         <iframe
           src="https://drive.google.com/file/d/1Gdr4Pa23abTOkLfGYKr0ramTRi6Dhxor/preview"
           width="1000"

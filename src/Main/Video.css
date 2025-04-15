@@ -15,7 +15,7 @@
 }
 
 .aaa{
-    height: 1500px;
+    height: 1800px;
 }
 
 
@@ -99,8 +99,9 @@
 @media (max-width : 850px) {
 
     iframe{
-        height: 400px;
         width: 600px;
+  height: 337.5px; /* ou arrondi à 338px */
+  border: none;
     }
     
 }

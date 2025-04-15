@@ -4,7 +4,7 @@ import "./Main.css";
 import { Link } from "react-router-dom";
 
 
-
+import icone from "../assets/iconee.png";
 
 
 
@@ -64,8 +64,8 @@ const Main = () => {
               target="_blank"
             >
               <div className="items one">
-                
                 <h2 className="rdv">Prendre rendez-vous</h2>
+                
               </div>
             </a>
 

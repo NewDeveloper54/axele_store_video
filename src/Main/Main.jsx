@@ -61,7 +61,6 @@ const Main = () => {
         <div className="cards">
             <a
               href="https://www.moncontroletechnique.fr/centre/controle-technique-maxeville"
-              target="_blank"
             >
               <div className="items one">
                 <h2 className="rdv">Prendre rendez-vous</h2>
@@ -71,7 +70,6 @@ const Main = () => {
 
             <a
               href="https://www.moncontroletechnique.fr/annulation_rdv"
-              target="_blank"
             >
               <div className="items two">
                 <h2 className="infos">Modifer / Supprimer un RDV</h2>

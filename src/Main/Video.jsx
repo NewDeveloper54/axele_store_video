@@ -33,15 +33,6 @@ function Video() {
     >
 
 
-      <div className="aaa">
-      
-
-
-
-
-      <div className="sectionTwoVideo">
-        
-
       <video
             src={videoFile}
             autoPlay
@@ -52,9 +43,7 @@ function Video() {
             className="customVideo"
           />
 
-      </div>
 
-      <div className="bouton">
       <button
           className="btn"
           onClick={() => navigate(-1)}
@@ -63,9 +52,8 @@ function Video() {
           Retour
         </button>
 
-        </div>
 
-      </div>
+    
     </div>
   );
 }

@@ -29,6 +29,9 @@
 
 
 .btn{
+    position: absolute;
+    left: 500px;
+    top: 300px;
     height: 60px;
     width: 100px;
     border-radius: 20px;
@@ -138,8 +141,8 @@
 
 .sectionTwoVideo {
 
-    width: 80%;          /* Prend toute la largeur de l’écran */
-    height: 80%
+    height: 100%;    
+    width: 100%;       /* Prend toute la largeur de l’écran */
     
     ;         /* Prend toute la hauteur de l’écran */
     display: flex;

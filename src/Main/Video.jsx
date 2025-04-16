@@ -34,30 +34,7 @@ function Video() {
 
 
       <div className="aaa">
-      <div className="titleVideo">
-        <div className="imagesParagrapheVideo">
-          <div className="imagesOnlyVideo">
-            <img
-              src={MCT}
-              alt="Logo Moncontroletechnique.fr"
-              width="350"
-              height="52"
-              className="mct"
-            />
-            <img
-              src={foxy}
-              alt="Foxy"
-              width="126"
-              height="100"
-              className="foxy"
-            />
-          </div>
-
-          <div className="pOnlyVideo">
-            <p className="foxyPara">Sécurité et Environnement</p>
-          </div>
-        </div>
-      </div>
+      
 
 
 

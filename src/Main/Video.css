@@ -14,10 +14,7 @@
     flex-grow: 1;
 }
 
-.bouton{
-    display: flex;
-    justify-content: center;
-}
+
 
 .aaa{
     height: 100%;
@@ -36,7 +33,7 @@
     width: 100px;
     border-radius: 20px;
     margin: 10px;
-    background-color: #EB5A35;
+    background-color: #17883e;
     color: white;
     border: none;
     font-weight: bold;

@@ -48,7 +48,9 @@ function Video() {
           onClick={() => navigate(-1)}
           style={{ marginBottom: "20px", marginTop: "100px" }}
         >
-          Retour
+          <span className="btnSpan">
+          Retour  
+          </span>
         </button>
 
 

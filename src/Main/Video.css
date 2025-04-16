@@ -28,7 +28,7 @@
 
 .btnSpan{
     font-weight: bold;
-    font-size: medium;
+    font-size: large;
 }
 
 
@@ -36,9 +36,9 @@
     position: absolute;
     left: 490px;
     bottom: 100px;
-    height: 60px;
-    width: 100px;
-    border-radius: 20px;
+    height: 80px;
+    width: 110px;
+    border-radius: 48% 48% 48% 48% / 35% 35% 35% 35%;
     margin: 10px;
     background-color: #EB5A35;
     color: white;

@@ -24,7 +24,6 @@ function Video() {
       id="here"
       style={{
         textAlign: "center",
-        padding: "50px",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
